@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- This sets up the title -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/titlesmall"></ImageView>
+    <!-- This sets up the image that directs the user to enter player 1 name in the Edit Text -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/p1name" />
+    <!-- This sets up the EditText where the player enters the name of player 1-->
+    <EditText
+        android:id="@+id/p1name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp" />
+    <!-- This sets up the image that directs the user to enter player 2 name in the Edit Text -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/p2name" />
+    <!-- This sets up the EditText where the player enters the name of player 1-->
+    <EditText
+        android:id="@+id/p2name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp" />
+    <!-- This sets up the play button which takes the user to the play screen upon click-->
+    <Button
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#dde024"
+        android:onClick="name"
+        android:padding="5dp"
+        android:text="Play"
+        android:textAllCaps="true"
+        android:textColor="#e61515"
+        android:textSize="35dp" />
+</LinearLayout>

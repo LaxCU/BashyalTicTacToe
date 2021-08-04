@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical"> <!-- This sets up the background-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp">
+        <!-- This sets up the title-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/titlesmall" />
+
+    </LinearLayout>
+    <!-- This sets up the playing grid for Tic-Tac-Toe -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="aClick" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="bClick" />
+
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="cClick" />
+
+        <ImageView
+            android:id="@+id/d"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|center"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="dClick" />
+
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|center"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="eClick" />
+
+        <ImageView
+            android:id="@+id/f"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="fClick" />
+
+        <ImageView
+            android:id="@+id/g"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="gClick" />
+
+        <ImageView
+            android:id="@+id/h"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="hClick" />
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/blank"
+            android:clickable="true"
+            android:onClick="iClick" />
+    </GridLayout>
+    <!-- This sets up the reset button-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/reset"
+            android:clickable="true"
+            android:onClick="reset"
+            android:padding="5sp" />
+
+    </LinearLayout>
+    <!-- This sets up the section where the users chooses their number (options) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+        <!-- This sets up the options image-->
+        <ImageView
+            android:id="@+id/option"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options" />
+
+        <Button
+            android:id="@+id/s1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spic1"
+            android:onClick="s1" />
+
+        <Button
+            android:id="@+id/s2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spic3"
+            android:onClick="s2" />
+
+        <Button
+            android:id="@+id/s3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spic5"
+            android:onClick="s3" />
+
+        <Button
+            android:id="@+id/s4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spic7"
+            android:onClick="s4" />
+
+        <Button
+            android:id="@+id/s5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spic9"
+            android:onClick="s5" />
+    </LinearLayout>
+</LinearLayout>

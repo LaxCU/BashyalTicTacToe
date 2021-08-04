@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/title"></ImageView>
+    <!-- This sets up the play button, upon click it takes you to Username screen to enter player names -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#dde024"
+        android:onClick="play"
+        android:padding="10dp"
+        android:text="Play"
+        android:textAllCaps="true"
+        android:textColor="#e61515"
+        android:textSize="35dp"></Button>
+    <!-- This sets up the button for instructions, upon click it takes you to the Instruction screen to learn how the game works -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#dde024"
+        android:onClick="inst"
+        android:padding="10dp"
+        android:text="Instructions"
+        android:textAllCaps="true"
+        android:textColor="#e61515"
+        android:textSize="35dp">
+
+    </Button>
+</LinearLayout>
